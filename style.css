@@ -1,0 +1,153 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'VT323', monospace;
+}
+
+html, body{
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(yellow, orange, red, purple, #300e36, black) no-repeat center center fixed;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -3;
+}
+#openingtext{
+    font-size: 25px;
+    margin: 100px 0;
+    position: relative;
+    right: 200px;
+    color: rgb(91, 10, 91);
+}
+#copyright{
+    position: relative;
+    top: 250px;
+    right: 20px;
+    color: yellow;
+}
+#image-container{
+    position: absolute;
+    top: 0;
+    left: 40%;
+    z-index: 1;
+}
+
+#background-fade{
+    margin: 0;
+    padding: 0;
+    background-position: center;
+    background-repeat: none;
+    background-size: cover;
+    height: 100%;
+    background-color: rgb(0, 0, 0);
+    opacity: 0;
+    z-index: 1;
+    
+}
+#bigImg{
+    display: none;
+    background-color: white;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+}
+#mainImg{
+    justify-content: center;
+    align-items: center;
+    margin: 5px;
+}
+
+#left,#right{
+    font-size: 30px;
+    color: yellow;
+    position: absolute;
+    top: 50%;
+    display: none;
+    z-index: 3;
+    padding: 0 8px;
+    margin-top: -15px;
+
+}
+#right{
+    right: 0;
+    padding-left: 50%;
+}
+
+#leftHalf{
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    top: 0;
+    z-index: 3;
+}
+#rightHalf{
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    top: 0;
+    right: 0;
+    z-index: 3;
+}
+.border{
+    position: relative;
+    right: 30%;
+    margin: 10px 5px;
+}
+.border:hover{
+    border: 5px orange solid;
+}
+
+#img1{
+    width: 180px;
+    height: 100px;
+}
+#img2{
+    width: 126px;
+    height: 126px;
+}
+#img3{
+    width: 160px;
+    height: 106px;
+}
+#img4{
+    width: 146px;
+    height: 82px;
+}
+#img5{
+    width: 200px;
+    height: 66px;
+}
+@media (max-width: 1500px){
+    #img1{
+        width: 90px;
+        height: 50px;
+    }
+    #img2{
+        width: 63px;
+        height: 63px;
+    }
+    #img3{
+        width: 80px;
+        height: 53px;
+    }
+    #img4{
+        width: 73px;
+        height: 41px;
+    }
+    #img5{
+        width: 100px;
+        height: 33px;
+    }
+}
+@media (max-width: 700px){
+    #openingtext{
+        font-size: 13px;
+        
+        
+    }
+    #copyright{
+        top: 100px;
+    }
+}
